@@ -2,7 +2,7 @@ require "valium/version"
 require 'active_record'
 
 module Valium
-  if ActiveRecord::VERSION::MAJOR == 3
+  if ActiveRecord::VERSION::MAJOR == 3 || ActiveRecord::VERSION::MAJOR == 4
 
     if ActiveRecord::VERSION::MINOR == 0 # We need to use the old deserialize code
 
